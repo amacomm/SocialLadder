@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SocialLadder.usersearch"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             BackgroundColor="{DynamicResource BackgroundColor}"
+             >
+    <RefreshView IsRefreshing="{Binding IsRefreshing}"
+             Command="{Binding RefreshCommand}">
+        <ScrollView>
+            <Grid ColumnSpacing="0" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                </Grid.RowDefinitions>
+
+                <!-- header background -->
+                <Image Source="back.png" Aspect="AspectFill"/>
+
+                <!-- profile image -->
+                <controls:CircleImage x:Name="Profil" Source="profil" Margin="0,0,0,-35" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="End"/>
+
+                <Grid Grid.Row="1" ColumnSpacing="0" RowSpacing="0" Margin="0,30">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="100" />
+                    </Grid.ColumnDefinitions>
+                    <!-- Кнопка перехода на страницу смены рейтинга -->
+                    <Button Margin="30" VerticalOptions="Center" Clicked="SetRating" Text="☆" Style="{StaticResource FollowButton}" FontAttributes="Bold"/>
+                    <!-- Profile Name -->
+                <StackLayout  Grid.Column="1" HorizontalOptions="Center" Padding="0,50,0,00">
+                    <Label HorizontalTextAlignment="Center" x:Name="Names" Text="Name" Style="{DynamicResource ProfileNameLabel}"/>
+                    <Label HorizontalTextAlignment="Center" x:Name="About" Text="About" Margin="0,-5" Style="{DynamicResource ProfileTagLabel}"/>
+                </StackLayout>
+
+                    <!--<Button Grid.Column="2" Margin="30" VerticalOptions="Center" Clicked="Subscribe" Text="+" Style="{StaticResource FollowButton}"/>-->
+                </Grid>
+
+
+                    <!-- Social Stats Section -->
+                <Grid Grid.Row="2" ColumnSpacing="0" RowSpacing="0" Margin="0,30">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout>
+                        <Label Text="Rus" x:Name="Country" Style="{DynamicResource StatsNumberLabel}"/>
+                        <Label Text="Country" x:Name="CountryT" Style="{DynamicResource StatsCaptionLabel}"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1">
+                        <Label Text="#1" x:Name="Rating" Style="{DynamicResource StatsNumberLabel}"/>
+                        <Label Text="Rating" x:Name="RatingT" Style="{DynamicResource StatsCaptionLabel}"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="2">
+                        <Label Text="10" x:Name="Star" Style="{DynamicResource StatsNumberLabel}"/>
+                        <Label Text="Stars" x:Name="StarT" Style="{DynamicResource StatsCaptionLabel}"/>
+                    </StackLayout>
+                </Grid>
+                <!-- характеристики -->
+                <ProgressBar Grid.Row="3" x:Name="prog" ProgressColor="#FD8B00"/>
+
+                <Frame Grid.Row="4"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#ff6666" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="300"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="charisma"/>
+                        <ProgressBar Grid.Column="1" x:Name="charism" ProgressColor="White"/>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="5"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#ff6e4a" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="300"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="brean"/>
+                        <ProgressBar Grid.Column="1" x:Name="brean" ProgressColor="White"/>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="6"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#f4c800" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="300"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="friandly"/>
+                        <ProgressBar Grid.Column="1" x:Name="friandly" ProgressColor="White"/>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="7"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#d1e231" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="300"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="activity"/>
+                        <ProgressBar Grid.Column="1" x:Name="activ" ProgressColor="White"/>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="8"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#75c1ff" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="300"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="dialogue"/>
+                        <ProgressBar Grid.Column="1" x:Name="dialog" ProgressColor="White"/>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="9"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#6495ed" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="300"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="trust"/>
+                        <ProgressBar Grid.Column="1" x:Name="trust" ProgressColor="White"/>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="10"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#7366bd" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="300"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="beauty"/>
+                        <ProgressBar Grid.Column="1" x:Name="beauty" ProgressColor="White"/>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="11"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#9966cc" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="300"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="strong"/>
+                        <ProgressBar Grid.Column="1" x:Name="strong" ProgressColor="White"/>
+                    </Grid>
+                </Frame>
+            </Grid>
+        </ScrollView>
+    </RefreshView>
+</ContentPage>

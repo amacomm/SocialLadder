@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="{DynamicResource BackgroundColor}"
+             x:Class="SocialLadder.tool">
+    <ContentPage.Content>
+        <Grid Grid.Row="1" Margin="0,20,0,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="AUTO"/>
+            </Grid.RowDefinitions>
+            
+            <!-- кнопка перехода на страницу настроик-->
+            <Button x:Name="Set" Grid.Row="1" Text="Setting" Clicked="Setting" Style="{DynamicResource FollowButton}" Margin="10,0"/>
+            
+          <!--<Button x:Name="Exit" Grid.Row="2" Text="Exit" Clicked="BExit" Style="{DynamicResource FollowButton}" Margin="10,0"/>
+              <Button x:Name="ThemB" Grid.Row="3" Text="Theme" Clicked="Them" VerticalOptions="Start" Style="{DynamicResource FollowButton}" Margin="10,0"/>-->
+            <Label x:Name="Develop" Grid.Row="5" Text="Developers"  VerticalOptions="End" Margin="0,0,0,20" TextColor="#5992FF" HorizontalOptions="Center" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Dev"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

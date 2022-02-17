@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SocialLadder.search"
+             BackgroundColor="{DynamicResource BackgroundColor}"
+             IconImageSource="search.png">
+
+    <ContentPage.Content>
+        <RefreshView IsRefreshing="{Binding IsRefreshing}"
+             Command="{Binding RefreshCommand}">
+            <ScrollView>
+                <Grid x:Name="G1" Grid.Row="1" Margin="0,20,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="AUTO"/>
+                        <RowDefinition Height="AUTO"/>
+                    </Grid.RowDefinitions>
+                    
+                    <!-- поле для ввода поискового запроса-->
+                    <SearchBar x:Name="Search" Grid.Row="1" Placeholder="Search" PlaceholderColor="{DynamicResource BodyTextColor}" SearchButtonPressed="OnSearchButtonPressed" TextColor="{DynamicResource HeaderTextColor}" CancelButtonColor="{DynamicResource BodyTextColor}"/>
+                </Grid>
+            </ScrollView>
+        </RefreshView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SocialLadder.Styles.LightTheme">
+
+    <Color x:Key="HeaderTextColor">#585858</Color>
+    <Color x:Key="BodyTextColor">#8f8f8f</Color>
+    <Color x:Key="ButtonBackgroundColor">#5992FF</Color>
+    <Color x:Key="ButtonBackgroundColorWhite">#FFFFFF</Color>
+    <Color x:Key="BackgroundColor">#ffffff</Color>
+    <Color x:Key="TextFollowButton">#ffffff</Color>
+
+    <!-- font families -->
+    <OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String"
+                    iOS="HelveticaNeue"
+                    Android="sans-serif" />
+    <OnPlatform x:Key="LightFontFamily" x:TypeArguments="x:String"
+                    iOS="HelveticaNeue-Light"
+                    Android="sans-serif-light" />
+    <OnPlatform x:Key="MediumFontFamily" x:TypeArguments="x:String"
+                    iOS="HelveticaNeue-Medium"
+                    Android="sans-serif-medium" />
+
+    <!-- Styles -->
+    <Style x:Key="ProfileNameLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource HeaderTextColor}" />
+        <Setter Property="FontSize" Value="22" />
+        <Setter Property="FontFamily" Value="{DynamicResource MediumFontFamily}" />
+    </Style>
+
+    <Style x:Key="ProfileTagLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource BodyTextColor}" />
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontFamily" Value="{DynamicResource RegularFontFamily}" />
+    </Style>
+
+    <Style x:Key="StatsNumberLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource HeaderTextColor}" />
+        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontFamily" Value="{DynamicResource LightFontFamily}" />
+    </Style>
+
+    <Style x:Key="StatsCaptionLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource BodyTextColor}" />
+        <Setter Property="Margin" Value="0,-5,0,0"/>
+        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontFamily" Value="{DynamicResource LightFontFamily}" />
+    </Style>
+
+    <Style x:Key="MainBodyLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource BodyTextColor}" />
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontFamily" Value="{DynamicResource RegularFontFamily}" />
+    </Style>
+
+    <Style x:Key="FollowButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{DynamicResource ButtonBackgroundColor}"/>
+        <Setter Property="TextColor" Value="White"/>
+        <Setter Property="HeightRequest" Value="40"/>
+        <Setter Property="BorderRadius" Value="20"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontFamily" Value="{DynamicResource MediumFontFamily}" />
+    </Style>
+
+    <Style x:Key="WithButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{DynamicResource ButtonBackgroundColorWhite}"/>
+        <Setter Property="TextColor" Value="#6666ff"/>
+        <Setter Property="HeightRequest" Value="40"/>
+        <Setter Property="BorderRadius" Value="20"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontFamily" Value="{DynamicResource MediumFontFamily}" />
+    </Style>
+
+    <Style x:Key="EnteryMain" TargetType="Entry">
+        <Setter Property="TextColor" Value="{DynamicResource ButtonBackgroundColor}"/>
+        <Setter Property="PlaceholderColor" Value="#7777FF"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="FontFamily" Value="{DynamicResource MediumFontFamily}" />
+    </Style>
+
+    <Style x:Key="HeaderLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="Black"/>
+        <Setter Property="FontSize" Value="25"/>
+        <Setter Property="FontFamily" Value="{DynamicResource RegularFontFamily}"/>
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff457bc0">
+    <EditText
+        android:inputType="textPersonName"
+        android:layout_width="221.0dp"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:hint="E-mail or login"
+        android:layout_marginTop="181.5dp"
+        android:textColor="#ffcae8f7"
+        app:backgroundTint="#ffcae8f7"
+        android:layout_centerInParent="true"
+        android:accessibilityHeading="true" />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="221.0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText1"
+        android:id="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0.0dp"
+        android:hint="Password"
+        android:textColor="#ffcae8f7"
+        app:backgroundTint="#ffcae8f7"
+        android:autoText="false" />
+    <Button
+        android:text="Log in"
+        android:layout_width="221.0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText2"
+        android:id="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11.0dp"
+        android:layout_marginRight="0.0dp"
+        android:textColor="#ff87ceeb"
+        android:background="#ff5287cb" />
+    <Button
+        android:text="Sign up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44.0dp"
+        android:background="#ff5287cb"
+        android:textColor="#ff87ceeb" 
+        />
+    <ImageView
+        android:src="@drawable/Icon3lou"
+        android:layout_width="224.0dp"
+        android:layout_height="224.5dp"
+        android:layout_above="@id/editText1"
+        android:id="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0.0dp"
+        android:layout_marginTop="42.5dp" />
+
+</RelativeLayout>

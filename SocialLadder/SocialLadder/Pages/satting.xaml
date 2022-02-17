@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SocialLadder.satting"
+             BackgroundColor="{DynamicResource BackgroundColor}">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Grid.Row="1" Margin="20,20,20,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                </Grid.RowDefinitions>
+                
+                <!-- поле смены пароля -->
+                <Label x:Name="Pass" Grid.Row="1" Text="Change password" HorizontalOptions="Center" Style="{DynamicResource HeaderLabel}"/>
+                <Entry Grid.Row="2" x:Name="pass1" Placeholder="Enter new password" IsPassword="True" Style="{DynamicResource EnteryMain}"/>
+                <Entry Grid.Row="3" x:Name="pass2" Placeholder="Reenter new password" IsPassword="True" Style="{DynamicResource EnteryMain}"/>
+                <Button x:Name="ChPass" Grid.Row="4" Text="Change password" Clicked="pass" Style="{DynamicResource FollowButton}"/>
+
+                <!-- поле для смены почты -->
+                <Label x:Name="MailL" Grid.Row="5" Text="Change E-mail" HorizontalOptions="Center" Margin="0,20,0,0" Style="{DynamicResource HeaderLabel}"/>
+                <Entry Grid.Row="6" x:Name="maile" Placeholder="Enter new mail" IsPassword="True" Style="{DynamicResource EnteryMain}"/>
+                <Button x:Name="Bmail" Grid.Row="7" Text="Change mail" Clicked="mail" Style="{DynamicResource FollowButton}"/>
+
+                <!-- кнопка смены аватарки -->
+                <Label x:Name="CAva" Grid.Row="8" Text="Change avatar" HorizontalOptions="Center" Padding="0,20,0,0" Style="{DynamicResource HeaderLabel}"/>
+                <Button x:Name="LAva" Clicked="ChengeAva" Grid.Row="9" Text="Load new avatar" Style="{DynamicResource FollowButton}" VerticalOptions="Start"/>
+
+                <!-- поле для смены информации о себе -->
+                <Entry Grid.Row="10" x:Name="about" Placeholder="About" Style="{DynamicResource EnteryMain}"/>
+                <Button x:Name="Chabout" Grid.Row="11" Text="Change about" Clicked="ClickAbout" Style="{DynamicResource FollowButton}"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

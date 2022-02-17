@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>О себе</value>
+    <comment>About</comment>
+  </data>
+  <data name="age" xml:space="preserve">
+    <value>Возраст</value>
+    <comment>Age field</comment>
+  </data>
+  <data name="Alert" xml:space="preserve">
+    <value>Тревога</value>
+    <comment>Alert</comment>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отмена</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="Chabout" xml:space="preserve">
+    <value>Изменение информации о себе</value>
+    <comment>Changing your personal information</comment>
+  </data>
+  <data name="chava" xml:space="preserve">
+    <value>Поменять аватар</value>
+    <comment>For chenge avatar</comment>
+  </data>
+  <data name="chmail" xml:space="preserve">
+    <value>Поменять почту</value>
+    <comment>Main text for chenge mail</comment>
+  </data>
+  <data name="chpass" xml:space="preserve">
+    <value>Поменять пароль</value>
+    <comment>Main text for chenge pass</comment>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Введите код из сообщения:</value>
+    <comment>Enter code from message</comment>
+  </data>
+  <data name="country" xml:space="preserve">
+    <value>Страна</value>
+    <comment>Country field</comment>
+  </data>
+  <data name="developers" xml:space="preserve">
+    <value>Разработчики</value>
+    <comment>Developers button</comment>
+  </data>
+  <data name="EmailNotEnter" xml:space="preserve">
+    <value>Введите адрес электронной почты в поле E-mail, с которым была связана учетная запись</value>
+    <comment>Message: Enter the email address in the E-mail field that the account was linked to</comment>
+  </data>
+  <data name="EmailValid" xml:space="preserve">
+    <value>Формат электронной почты не действителен, пожалуйста, введите его еще раз...</value>
+    <comment>Email format not valid, please enter again...</comment>
+  </data>
+  <data name="EnterNewPass" xml:space="preserve">
+    <value>Введите свой новый пароль:</value>
+    <comment>Enter your new password</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+    <comment>Error</comment>
+  </data>
+  <data name="global" xml:space="preserve">
+    <value>Глобальный рейтинг</value>
+    <comment>Main text for rating page</comment>
+  </data>
+  <data name="google" xml:space="preserve">
+    <value>Войдити с Google</value>
+    <comment>Login with google</comment>
+  </data>
+  <data name="InfReg" xml:space="preserve">
+    <value>Чтобы быть узнанным мы рекомендуем загрузить фотографию вашего лица</value>
+    <comment>recommendation for uploading photos</comment>
+  </data>
+  <data name="InvalidCode" xml:space="preserve">
+    <value>Вы ввели неверный код</value>
+    <comment>Message: You entered an invalid code</comment>
+  </data>
+  <data name="lenguage" xml:space="preserve">
+    <value>Язык</value>
+    <comment>Language button</comment>
+  </data>
+  <data name="lodnava" xml:space="preserve">
+    <value>Загрузить новый аватар</value>
+    <comment>Button new ava</comment>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Войти</value>
+    <comment>Login button</comment>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Ошибка входа</value>
+    <comment>Message: Login error</comment>
+  </data>
+  <data name="mail" xml:space="preserve">
+    <value>E-mail</value>
+    <comment>The input field for the email</comment>
+  </data>
+  <data name="MailhasChang" xml:space="preserve">
+    <value>Почта была изменена</value>
+    <comment>Message: Mail has been changed</comment>
+  </data>
+  <data name="MailIsUsed" xml:space="preserve">
+    <value>Почта уже используется</value>
+    <comment>Message: Mail is used</comment>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Имя</value>
+    <comment>Name field</comment>
+  </data>
+  <data name="newmail" xml:space="preserve">
+    <value>Введите новый mail адрес</value>
+    <comment>for enter mail</comment>
+  </data>
+  <data name="newpass" xml:space="preserve">
+    <value>Введите новый пароль</value>
+    <comment>Field for enter password</comment>
+  </data>
+  <data name="NotReg" xml:space="preserve">
+    <value>Этот адрес электронной почты не зарегистрирован</value>
+    <comment>Message: This email address is not registered</comment>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>ИЛИ</value>
+    <comment>or</comment>
+  </data>
+  <data name="PassDM" xml:space="preserve">
+    <value>Пароли не совпадают</value>
+    <comment>Message: Passwords don't match</comment>
+  </data>
+  <data name="PassHasChang" xml:space="preserve">
+    <value>Пароль изменен</value>
+    <comment>Message: Password has been changed</comment>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Пароль</value>
+    <comment>The input field for the pass</comment>
+  </data>
+  <data name="Photo" xml:space="preserve">
+    <value>Загрузить фото</value>
+    <comment>Button Uploaded photo</comment>
+  </data>
+  <data name="PhotoUp" xml:space="preserve">
+    <value>Фото загруженно</value>
+    <comment>Photo uploaded</comment>
+  </data>
+  <data name="rating" xml:space="preserve">
+    <value>Рейтинг</value>
+    <comment>Rating</comment>
+  </data>
+  <data name="Ratingfor" xml:space="preserve">
+    <value>Рейтинг для </value>
+    <comment>Rating for</comment>
+  </data>
+  <data name="regist" xml:space="preserve">
+    <value>Нет аккаунта? Присоединяйся</value>
+    <comment>registration bttton</comment>
+  </data>
+  <data name="registr" xml:space="preserve">
+    <value>Зарегистрироваться</value>
+    <comment>Button to registr</comment>
+  </data>
+  <data name="rnewpass" xml:space="preserve">
+    <value>Введите пароль занова</value>
+    <comment>for reenter password</comment>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>Поиск</value>
+    <comment>Search field</comment>
+  </data>
+  <data name="setting" xml:space="preserve">
+    <value>Настройки</value>
+    <comment>Setting button</comment>
+  </data>
+  <data name="star" xml:space="preserve">
+    <value>Звёзды</value>
+    <comment>Star</comment>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Начнём регистрацию!</value>
+    <comment>Main text registration page</comment>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Вы были зарегистрированы в Social Ladders</value>
+    <comment>You have been registered in Social Ladders</comment>
+  </data>
+  <data name="theme" xml:space="preserve">
+    <value>Тема</value>
+    <comment>Theme button</comment>
+  </data>
+  <data name="trouble" xml:space="preserve">
+    <value>Проблемы со входом? Поможем войти.</value>
+    <comment>Trouble button</comment>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>Проверка</value>
+    <comment>Verify</comment>
+  </data>
+  <data name="WrongMailPass" xml:space="preserve">
+    <value>Введена неверная почта или пароль</value>
+    <comment>Message: Enter wrong mail or password</comment>
+  </data>
+</root>

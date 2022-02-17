@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="{DynamicResource BackgroundColor}"
+             x:Class="SocialLadder.registration">
+    <ContentPage.Content>
+       
+        <Grid Grid.Row="1" Margin="20,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="1" x:Name="start" Text="Start registration!" HorizontalOptions="CenterAndExpand" Style="{DynamicResource HeaderLabel}" />
+
+            <!-- форма регистрации -->
+            <Entry Grid.Row="2" x:Name="Name" Placeholder="Name" Style="{DynamicResource EnteryMain}"/>
+            <Entry Grid.Row="3" x:Name="About"  Placeholder="About" Style="{DynamicResource EnteryMain}"/>
+            <Entry Grid.Row="4" x:Name="Age" Placeholder="Age" Keyboard="Numeric" Style="{DynamicResource EnteryMain}"/>
+            <Entry Grid.Row="5" x:Name="Country" Placeholder="Country" Style="{DynamicResource EnteryMain}"/>
+            <Entry Grid.Row="6" x:Name="Email"  Placeholder="E-mail" Keyboard="Email" Style="{DynamicResource EnteryMain}"/>
+            <Entry Grid.Row="7" x:Name="Password" Placeholder="Password" IsPassword="True" Style="{DynamicResource EnteryMain}"/>
+            <Button Clicked="ClickAva" x:Name="ava" Grid.Row="8" Text="Uploaded photo" VerticalOptions="Center" Style="{DynamicResource FollowButton}" Margin="50,0"/>
+            <Label x:Name="Inf"  Grid.Row="9" Text="To be recognized we recommend uploading your face" TextColor="#5992FF" HorizontalOptions="Center" Margin="0,10,0,0" FontSize="10"/>
+            <!--<Button x:Name="back" Grid.Row="10" Text="Uploaded back" VerticalOptions="Center" Style="{DynamicResource FollowButton}" Margin="50,0" />-->
+            <Button x:Name="reg" Clicked="Registry" Grid.Row="11" Text="Register" VerticalOptions="Center" Style="{DynamicResource FollowButton}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

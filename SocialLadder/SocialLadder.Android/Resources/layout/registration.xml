@@ -1,0 +1,63 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ff457bc0"
+    android:layout_height="match_parent">
+    <EditText
+        android:inputType="textPersonName"
+        android:layout_width="221.0dp"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:hint="Name"
+        android:id="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffcae8f7"
+        app:backgroundTint="#ffcae8f7"
+        android:layout_marginTop="114.5dp" />
+    <EditText
+        android:inputType="textEmailAddress"
+        android:layout_width="221.0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText1"
+        android:id="@+id/editText2"
+        android:hint="E-mail"
+        android:textColor="#ffcae8f7"
+        app:backgroundTint="#ffcae8f7"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:inputType="date"
+        android:layout_width="221.0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText2"
+        android:id="@+id/editText3"
+        android:hint="Birthdate"
+        android:textColor="#ffcae8f7"
+        app:backgroundTint="#ffcae8f7"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="221.0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText3"
+        android:id="@+id/editText4"
+        android:hint="Password"
+        android:textColor="#ffcae8f7"
+        app:backgroundTint="#ffcae8f7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0.0dp" />
+    <Button
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText4"
+        android:id="@+id/button1"
+        android:textColor="#ff87ceeb"
+        android:background="#ff5287cb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47.5dp" />
+
+</RelativeLayout>

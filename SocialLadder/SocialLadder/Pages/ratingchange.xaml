@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SocialLadder.ratingchange"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             BackgroundColor="{DynamicResource BackgroundColor}"
+             >
+    <RefreshView IsRefreshing="{Binding IsRefreshing}"
+             Command="{Binding RefreshCommand}">
+        <ScrollView>
+            <Grid ColumnSpacing="0" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                </Grid.RowDefinitions>
+
+                <Label x:Name="MLable" Text="Rating for user" HorizontalOptions="Center" Style="{DynamicResource HeaderLabel}" Margin="0,50"/>
+                <!-- слайдеры смены рейтинга -->
+                <Frame Grid.Row="1"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#ff6666" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="270"/>
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="charisma"/>
+                        <Slider Grid.Column="1" ThumbColor="#FFFFFF" Maximum="100" ValueChanged="Beauty"/>
+                        <Label Grid.Column="2" x:Name="Ncharism" TextColor="White" VerticalOptions="Center" FontSize="20" FontAttributes="Bold" />
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="2"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#ff6e4a" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="270"/>
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="brean"/>
+                        <Slider Grid.Column="1" ValueChanged="Charism" Maximum="100" ThumbColor="White"/>
+                        <Label Grid.Column="2" x:Name="Nbrean" TextColor="White" VerticalOptions="Center" FontSize="20" FontAttributes="Bold"/>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="3"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#f4c800" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="270"/>
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="friandly"/>
+                        <Slider Grid.Column="1" ValueChanged="Senseofhumor" Maximum="100" ThumbColor="White"/>
+                        <Label Grid.Column="2" x:Name="Nfriandly" TextColor="White" VerticalOptions="Center" FontSize="20" FontAttributes="Bold"/>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="4"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#d1e231" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="270"/>
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="activity"/>
+                        <Slider Grid.Column="1" ValueChanged="Intelligence" Maximum="100" ThumbColor="White"/>
+                        <Label Grid.Column="2" x:Name="Nactiv" TextColor="White" VerticalOptions="Center" FontSize="20" FontAttributes="Bold"/>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="5"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#75c1ff" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="270"/>
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="dialogue"/>
+                        <Slider Grid.Column="1" ValueChanged="Conversation" Maximum="100" ThumbColor="White"/>
+                        <Label Grid.Column="2" x:Name="Ndialog" TextColor="White" VerticalOptions="Center" FontSize="20" FontAttributes="Bold"/>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="6"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#6495ed" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="270"/>
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="trust"/>
+                        <Slider Grid.Column="1" ValueChanged="Activity" Maximum="100" ThumbColor="White"/>
+                        <Label Grid.Column="2" x:Name="Ntrust" TextColor="White" VerticalOptions="Center" FontSize="20" FontAttributes="Bold"/>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="7"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#7366bd" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="270"/>
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="beauty"/>
+                        <Slider Grid.Column="1" ValueChanged="Responsibility" Maximum="100" ThumbColor="White"/>
+                        <Label Grid.Column="2" x:Name="Nbeauty" TextColor="White" VerticalOptions="Center" FontSize="20" FontAttributes="Bold"/>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="8"  HasShadow="False" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="90"
+           BackgroundColor="#9966cc" Margin="0,2.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="270"/>
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="strong"/>
+                        <Slider Grid.Column="1" ValueChanged="Strength" Maximum="100" ThumbColor="White"/>
+                        <Label Grid.Column="2" x:Name="Nstrong" TextColor="White" VerticalOptions="Center" FontSize="20" FontAttributes="Bold"/>
+                    </Grid>
+                </Frame>
+                <!-- profile description 
+            <ScrollView Grid.Row="4">
+
+                <Label Margin="20,0" HorizontalTextAlignment="Center" Style="{DynamicResource MainBodyLabel}" 
+ Text="Then there will be a rating of all your characteristics, perhaps some other visual elements." />
+            </ScrollView>-->
+
+                <!--follow button -->
+                <Button Grid.Row="9" Clicked="Set" Text="Set a rating" Margin="20" VerticalOptions="End" Style="{StaticResource FollowButton}"/>
+
+            </Grid>
+        </ScrollView>
+    </RefreshView>
+</ContentPage>

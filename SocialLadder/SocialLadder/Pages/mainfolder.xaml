@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:local="clr-namespace:SocialLadder"
+             mc:Ignorable="d"
+             BackgroundColor="{DynamicResource BackgroundColor}"
+             x:Class="SocialLadder.Mainfolder">
+    <!--Создание окна с 4-мя вкладками-->
+    <!-- окно профиля пользователя -->
+    <local:user>
+        
+    </local:user>
+
+    <!-- окно глобального рйтинга -->
+    <local:rating>
+
+    </local:rating>
+
+    <!-- окно поиска -->
+    <local:search>
+
+    </local:search>
+
+    <!-- окно tool -->
+    <NavigationPage IconImageSource="tool.png">
+        <x:Arguments>
+            
+            <local:tool>
+        
+    </local:tool>
+        </x:Arguments>
+    </NavigationPage>
+    
+</TabbedPage>
